@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pokémon Name Generator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Pokémon Name Generator</h1>
+    <a href="" id="showExplanation">Huh?</a>
+    <span id="explanation" style="display: none; max-width: 50%;">
+    <br />
+    This is based on mathematical sampling. Each character chosen is semi-random,
+    based on how likely it is to appear after the three characters before it.
+    To determine how likely that is, a list of all existing Pokémon names is used.
+    </span>
+    <h2>Your generated name:</h2>
+    <span class="current"></span><br />
+    Length: <input id="length" type="number" min="3" max="12" value="7" />
+    <button id="generateButton">Generate new</button>
+    <h4>Previous names:</h4>
+    <ul class="old"></ul>
+</body>
+</html>
